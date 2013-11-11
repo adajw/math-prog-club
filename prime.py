@@ -19,7 +19,7 @@ def primes(limit = None):
     if limit is None:
         return _infinite_primes()
     else:
-        return itertools.takewhile(lambda x: x < limit, infinite_primes())
+        return itertools.takewhile(lambda x: x < limit, _infinite_primes())
 
 def _infinite_primes():
     """A generator for infinite primes."""
